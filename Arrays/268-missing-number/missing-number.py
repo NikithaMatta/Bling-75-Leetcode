@@ -4,6 +4,4 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        s1 = sum(range(len(nums)+1))
-        s2 = sum(nums)
-        return s1-s2
+        return sum(range(len(nums)+1)) - sum(nums)
