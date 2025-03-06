@@ -4,9 +4,6 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        nums.sort()
-        if len(nums) not in nums:
-            return len(nums)
-        for i in range(len(nums)):
-            if nums[i] != i:
-                return i
+        s1 = sum(range(len(nums)+1))
+        s2 = sum(nums)
+        return s1-s2
