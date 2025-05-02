@@ -5,9 +5,8 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        ct = Counter(nums)
+        result = 0
         for num in nums:
-            if ct[num] == 1:
-                return num
-
+            result ^= num
+        return result
         
